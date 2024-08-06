@@ -1,0 +1,20 @@
+info:
+  app:
+    name: "Komi Project"
+    description: "Microservicio basado en el scrapeo a sitios webs personalizados."
+    version: 1.0.0
+    encoding: UTF-8
+    java:
+      version: 17
+spring:
+  profiles:
+    active: local
+  cloud:
+    config:
+      allowOverride: false
+      overrideNone: false
+      overrideSystemProperties: false
+
+server:
+  port: 7001
+  max-http-header-size: 40000
